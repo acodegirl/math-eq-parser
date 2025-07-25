@@ -18,7 +18,7 @@ A simple and extensible math expression parser that evaluates mathematical expre
 1. [docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 2. [user to be added to docker group](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
 
-#### Installation (Recommended)
+#### 1.1 Installation (Recommended)
 
 1. Run install script
 
@@ -26,7 +26,7 @@ A simple and extensible math expression parser that evaluates mathematical expre
 curl https://raw.githubusercontent.com/acodegirl/math-eq-parser/main/install | bash
 ```
 
-#### Installation with docker compose
+#### 1.2 Installation with docker compose
 
 1. Clone git repo
 
@@ -37,6 +37,7 @@ git clone https://github.com/acodegirl/math-eq-parser.git
 2. Run docker compose
 
 ```
+cd math-eq-parser
 docker compose up
 ```
 
@@ -44,7 +45,7 @@ docker compose up
 
 1. Clone the repository:
    ```powershell
-   git clone https://github.com/your-username/math-eq-parser.git
+   git clone https://github.com/acodegirl/math-eq-parser.git
    cd math-eq-parser
    ```
 2. Install dependencies for server and client:
