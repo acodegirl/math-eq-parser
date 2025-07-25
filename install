@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+{ # this ensures the entire script is downloaded #
+
+shopt -s extglob
+set -o errtrace
+set -o errexit
+set -o pipefail
+
+# Set your repository URL here
+REPO_URL="https://github.com/acodegirl/math-eq-parser.git"
+REPO_DIR="math-eq-parser"
+
+# Clone the repository if it doesn't exist
+if [ ! -d "$REPO_DIR" ]; then
+    git clone "$REPO_URL"
+fi
+
+# Change to the repository directory
+cd "$REPO_DIR" || exit 1
+
+# Start docker compose
+docker compose up
+} # this ensures the entire script is downloaded #
