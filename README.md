@@ -62,7 +62,7 @@ docker compose up
    ```
 4. Start the client in a new terminal:
    ```powershell
-   cd ../client
+   cd client
    npm start
    ```
 
